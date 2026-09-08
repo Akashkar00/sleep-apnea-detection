@@ -1,0 +1,70 @@
+{
+  "model": "efficientnet_b0",
+  "representation": "stft",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.47553068740287685,
+      "pr_auc": 0.9023704948926657,
+      "sensitivity": 0.8370944992947814,
+      "specificity": 0.9064182194616978,
+      "balanced_accuracy": 0.8717563593782396
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.37549892740512114,
+      "pr_auc": 0.906841707675911,
+      "sensitivity": 0.885049365303244,
+      "specificity": 0.867080745341615,
+      "balanced_accuracy": 0.8760650553224294
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.35147868057638865,
+      "pr_auc": 0.9136087818247418,
+      "sensitivity": 0.8751763046544428,
+      "specificity": 0.8836438923395445,
+      "balanced_accuracy": 0.8794100984969937
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.34212597860108823,
+      "pr_auc": 0.9124065446408712,
+      "sensitivity": 0.8716502115655853,
+      "specificity": 0.8836438923395445,
+      "balanced_accuracy": 0.877647051952565
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3316981505910191,
+      "pr_auc": 0.9227246799584722,
+      "sensitivity": 0.8765867418899859,
+      "specificity": 0.9014492753623189,
+      "balanced_accuracy": 0.8890180086261523
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.32551502499740786,
+      "pr_auc": 0.9194214311550692,
+      "sensitivity": 0.8765867418899859,
+      "specificity": 0.8910973084886128,
+      "balanced_accuracy": 0.8838420251892993
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3233079186364416,
+      "pr_auc": 0.9173507067067771,
+      "sensitivity": 0.8779971791255289,
+      "specificity": 0.884472049689441,
+      "balanced_accuracy": 0.881234614407485
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.32005107142145117,
+      "pr_auc": 0.9121234736912984,
+      "sensitivity": 0.8928067700987306,
+      "specificity": 0.8476190476190476,
+      "balanced_accuracy": 0.870212908858889
+    }
+  ]
+}

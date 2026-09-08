@@ -1,0 +1,58 @@
+seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  images_dir: data/images
+  splits_dir: data/splits
+  sampling_rate_hz: 100
+  window_minutes: 1
+  context_minutes: [-1, 0, 1]  # neighboring minutes included around the center
+
+  learning_records:
+    a: [1, 20]   # a01-a20
+    b: [1, 5]    # b01-b05
+    c: [1, 10]   # c01-c10
+  test_records:
+    x: [1, 35]   # x01-x35
+
+  # r/er variants are respiration/SpO2 channel sets for the SAME recording
+  # sessions as a01-a04, b01, c01-c03 (a01er even reuses a01.dat directly).
+  # They are not additional ECG records and must never be used as extra
+  # samples or mixed across splits.
+  excluded_related_records:
+    - a01r
+    - a02r
+    - a03r
+    - a04r
+    - b01r
+    - c01r
+    - c02r
+    - c03r
+    - a01er
+    - a02er
+    - a03er
+    - a04er
+    - b01er
+    - c01er
+    - c02er
+    - c03er
+
+preprocessing:
+  bandpass_low_hz: 0.5
+  bandpass_high_hz: 40.0
+  clip_iqr_multiplier: 20  # clip filtered signal to median +/- 20*IQR before normalizing
+
+image:
+  size: [224, 224]
+  preprocessing_version: v2
+  waveform_amplitude_clip: 20.0   # in robust-normalized units (median/IQR), fixed axes; matches clip_iqr_multiplier
+  stft_nperseg: 256
+  stft_db_clip: [-80, 0]
+  cwt_n_scales: 64
+  cwt_wavelet: morl
+  cwt_db_clip: [-40, 40]
+
+training:
+  batch_size: 32
+  learning_rate: 0.0003

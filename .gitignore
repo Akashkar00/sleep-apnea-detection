@@ -1,0 +1,32 @@
+# Data (large, redistributable from PhysioNet — not tracked)
+data/raw/
+data/processed/
+data/images/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Models / reports (regenerable)
+models/checkpoints/
+reports/figures/
+
+# OS
+.DS_Store
+._*
+
+# Editor / tooling
+.vscode/
+.claude/
+claude.md
+CLAUDE.md
+
+# uv
+.python-version
+
+# Personal / unrelated to this project
+cv.tex

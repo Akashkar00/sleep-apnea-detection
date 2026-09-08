@@ -1,0 +1,20 @@
+{
+  "model": "small_cnn",
+  "representation": "cwt",
+  "val_selected": {
+    "pr_auc": 0.9802382484600026,
+    "roc_auc": 0.9874618554112022,
+    "sensitivity": 0.9428772919605077,
+    "specificity": 0.9424430641821946,
+    "balanced_accuracy": 0.9426601780713512,
+    "accuracy": 0.9426037046699713
+  },
+  "test": {
+    "pr_auc": 0.94735858811608,
+    "roc_auc": 0.9635908582797279,
+    "sensitivity": 0.8126054286152431,
+    "specificity": 0.9553571428571429,
+    "balanced_accuracy": 0.8839812857361931,
+    "accuracy": 0.9011129887535692
+  }
+}
